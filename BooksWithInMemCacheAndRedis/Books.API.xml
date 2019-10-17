@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Books.API</name>
+    </assembly>
+    <members>
+        <member name="T:Books.API.Context.InMemoryDBInitializer">
+            <summary>
+            Seed books into In Memory DB
+            </summary>
+        </member>
+        <member name="M:Books.API.Context.InMemoryDBInitializer.Initialize(Books.API.DataServices.IBooksRepository)">
+            <summary>
+            Initialize In memory DB
+            </summary>
+            <param name="context">Books Context</param>
+        </member>
+        <member name="T:Books.API.Controllers.BooksController">
+            <summary>
+            Books Controller
+            </summary>
+        </member>
+        <member name="M:Books.API.Controllers.BooksController.#ctor(Books.API.DataServices.IBooksRepository)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="repository">Repo</param>
+        </member>
+        <member name="M:Books.API.Controllers.BooksController.GetBooks">
+            <summary>
+            Gets all books
+            </summary>
+            <returns>Book</returns>
+        </member>
+        <member name="T:Books.API.DataServices.BooksRepository">
+            <summary>
+            Books repo
+            </summary>
+        </member>
+        <member name="M:Books.API.DataServices.BooksRepository.#ctor(Books.API.Context.BooksContext)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="M:Books.API.DataServices.BooksRepository.AddBook(Books.API.Entities.Book)">
+            <summary>
+            Adds book
+            </summary>
+            <param name="b">Book</param>
+        </member>
+        <member name="M:Books.API.DataServices.BooksRepository.SaveChanges">
+            <summary>
+            Saves Changes
+            </summary>
+        </member>
+        <member name="M:Books.API.DataServices.BooksRepository.GetBooksAsync">
+            <summary>
+            Get Books
+            </summary>
+            <returns>Collection of books</returns>
+        </member>
+        <member name="T:Books.API.DataServices.IBooksRepository">
+            <summary>
+            Books Repo Interface
+            </summary>
+        </member>
+        <member name="M:Books.API.DataServices.IBooksRepository.AddBook(Books.API.Entities.Book)">
+            <summary>
+            Adds a book
+            </summary>
+            <param name="b"></param>
+        </member>
+        <member name="M:Books.API.DataServices.IBooksRepository.SaveChanges">
+            <summary>
+            Saves Changes
+            </summary>
+        </member>
+        <member name="M:Books.API.DataServices.IBooksRepository.GetBooksAsync">
+            <summary>
+            Gets Books
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
